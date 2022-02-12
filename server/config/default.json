@@ -1,5 +1,4 @@
 {
-  "port": 4000,
   "mongo": "mongodb+srv://goyal079:start123@cluster0.c8dzx.mongodb.net/service?retryWrites=true&w=majority",
   "aeskey": "luffytaro",
   "jwtkey": "zorojuro",

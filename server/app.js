@@ -1,7 +1,7 @@
 import express from "express";
-import config from "config";
+
 const app = express();
-const port = process.env.PORT || config.get("port");
+const port = 4000;
 
 // import connect function
 import "./connect.js";

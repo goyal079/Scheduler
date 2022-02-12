@@ -1,14 +1,14 @@
 import jwt from "jsonwebtoken";
-import config from "config";
+import "dotenv/config";
 import AES from "crypto-js/aes.js";
 function generateToken(id) {
   let token = jwt.sign(
     {
       _id: id,
     },
-    config.get("jwtkey"),
+    process.env.JWTKEY,
     { expiresIn: "1h" }
   );
-  return AES.encrypt(token, config.get("aeskey")).toString();
+  return AES.encrypt(token, process.env.AESKEY).toString();
 }
 export default generateToken;
