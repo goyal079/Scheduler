@@ -10,3 +10,4 @@ async function connectDB() {
   }
 }
 connectDB();
+// console.log(process.env.MONGODB);

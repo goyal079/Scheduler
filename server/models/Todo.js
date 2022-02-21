@@ -15,7 +15,7 @@ let todoSchema = new Schema({
       reminder: { type: Array, required: true },
     },
   ],
-});
+}); 
 
 const todoModel = new mongoose.model("Todo", todoSchema, "onlyTodos");
 
